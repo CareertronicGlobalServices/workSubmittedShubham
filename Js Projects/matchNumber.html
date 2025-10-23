@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="main-heading" > Match the number Game </h1>
+    <h3 class="number-heading"></h3>
+    <h4 class="suffeling-number"></h4>
+    <button class="stp-button">Stop</button>
+</body>
+<script>
+    const random = document.querySelector('.number-heading');
+    console.log(random.innerHTML);
+    const suffel= document.querySelector('.suffeling-number');
+    const stopBtn = document.querySelector('.stp-button');
+    
+
+    const randomNumber = parseInt(Math.random() * 10) + 1;
+        random.innerHTML =parseInt(randomNumber)
+        console.log(typeof random.innerHTML);
+        console.log(typeof randomNumber)
+
+    let shuffel;
+    const suffelingNumber = function(){
+        //suffel.innerHTML =parseInt(Math.random() * 10) + 1;
+        
+        shuffel = parseInt(Math.random() * 10) + 1;
+        suffel.innerHTML =shuffel;
+        return shuffel
+    }
+  
+
+    const timer = setInterval(suffelingNumber, 1000);
+    stopBtn.addEventListener('click', function(){
+        clearInterval(timer);
+        if(randomNumber == shuffel){
+            alert("🎉 Congrulations you matched the number");
+        }
+        else{
+            alert('❌ Oops number not matched! Try again. ')
+        }
+    })
+</script>
+</html>

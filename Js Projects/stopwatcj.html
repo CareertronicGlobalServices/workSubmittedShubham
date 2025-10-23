@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="timer">00:00</h1>
+    <button class="start">Start</button>
+    <button class="stop">Stop</button>
+    <button class="reset">Reset</button>
+    <button class="lap">Lap</button>
+    <div class="lap-list"></div>
+</body>
+<script>
+    const timer = document.querySelector('.timer');
+    const startButton= document.querySelector('.start');
+    const stopButton = document.querySelector('.stop');
+    const resetButton = document.querySelector('.reset');
+    const lapButton = document.querySelector('.lap');
+    const lapList = document.querySelector('.lap-list');
+
+    let count =0;
+    let number =null;
+    lapButton.disabled = true;
+   
+    function formatTime(seconds) {
+        const mins = Math.floor(seconds / 60);
+        const secs = seconds % 60;
+        return `${mins}:${secs}`;
+        }
+
+    startButton.addEventListener('click', function(){
+    number = setInterval(() =>{
+        count++;
+        timer.innerHTML = formatTime(count);
+    },1000);
+    startButton.disabled= true;
+    lapButton.disabled = false;
+    }) 
+
+    stopButton.addEventListener('click', function(){
+        clearInterval(number);
+        number= null;
+    startButton.disabled= false;
+    lapButton.disabled = true;
+
+    })
+
+    resetButton.addEventListener('click', function(){
+        clearInterval(number);
+        number=null;
+        count=0;
+        timer.textContent = formatTime(count);
+        startButton.disabled= false;
+        lapButton.disabled = true;
+    })
+
+    lapButton.addEventListener('click', function() {
+        const lapTime = document.createElement('li');
+        lapTime.textContent = formatTime(count);
+        lapList.appendChild(lapTime);
+}); 
+</script>
+</html>

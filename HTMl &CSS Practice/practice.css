@@ -1,0 +1,45 @@
+*{background-color:BLack;
+    color: azure;
+}
+
+body{background-image: url("/Media/download\ \(2\).png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
+h1{color: Red;
+font-family: cursive;
+border: 2px ridge aquamarine;
+text-align:  center;
+text-decoration: line-through white;
+margin: 50px;
+}
+
+nav{background-color: white;
+text-align: center;
+font-size: xx-large;}
+
+h2{color: beige;
+text-align: center;}
+p{color: azure;
+text-align: center;
+font-size:1.8cap;
+margin-top: 20px;
+margin-bottom: 10px;
+padding: 50px;
+border: 20px solid red;}
+
+
+strong{color: aquamarine;
+font-size: larger;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-style: italic;
+text-shadow: 5px whitesmoke;
+padding}
+
+a{ color: rgb(10, 254, 177);
+text-align:center;
+font-size:22px;}
+
+img{border: 5px dotted greenyellow;}

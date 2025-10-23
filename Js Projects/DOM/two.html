@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <ul class="list">
+            <li>javascript</li>
+        </ul>
+    </div>
+    <script>
+        function addLanguage(name){
+            const lis= document.createElement("li");
+            lis.innerHTML =`${name}`;
+            document.querySelector(".list").appendChild(lis);
+        }
+        addLanguage("Python");
+        addLanguage("C++");
+
+        //--------Replacing Element----------
+
+        const repElement = document.querySelector("li:nth-child(2)");
+        console.log(repElement.innerHTML);
+        repElement.innerHTML ="Shubham"; 
+        //repElement.outerHTML="<h1>outer</h1>"; //this is for changing text in this we have to write complete tag
+
+//--------------Replacing ELement with replacewith-----------
+        const newElement= document.createElement("h1");
+        newElement.textContent= "I am the new Element";
+        repElement.replaceWith(newElement);
+        console.log(newElement.innerHTML)
+
+        
+    </script>
+</body>
+</html>

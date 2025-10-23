@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disco Dancer</title>
+</head>
+<body>
+    <h1>I am a disco Dancer</h1>
+    <button class="start">Start</button>
+    <button class="stop">Stop</button>
+    <video class='video' src="./ssvid.app--Mithun-Chakraborty-super-video-Hindi-I-Am-A-Disco-Dancer_480p.mp4" height="500px"
+    width="500px"
+    controls></video>
+</body>
+
+<script>
+    const startBtn = document.querySelector('.start');
+    const stopBtn = document.querySelector('.stop');
+    const video = document.querySelector('.video'); 
+
+    let colorInterval = null; 
+
+    const randomColor = function(){
+        const val = '0123456789ABCDEF';
+        let color = '#';
+        for(let i = 0; i < 6; i++){
+            color += val[Math.floor(Math.random() * 16)];
+        }
+        return color;
+       
+    };
+    //console.log(randomColor)
+
+    const changeBgColor = function(){
+        const rndmClr = randomColor();
+        document.body.style.backgroundColor = rndmClr;
+    }
+
+    startBtn.addEventListener('click', function(){
+        colorInterval = setInterval(changeBgColor, 100);
+        
+        video.play();
+        
+       
+        startBtn.disabled = true;
+        stopBtn.disabled = false;
+    });
+
+    stopBtn.addEventListener('click', function(){
+        clearInterval(colorInterval);
+        colorInterval = null;
+        
+       
+        video.pause();
+        
+        
+        startBtn.disabled = false;
+        stopBtn.disabled = true;
+    });
+</script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <div class="DIV">
+        <h1>Welcome to Document Object Modle</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eaque.</p>
+        <h2>I am second Heading</h2>
+        <button>Button</button>
+        <input id="Password" type="password" value="***"/> 
+    </div>
+
+    <p id="pid">Lorem ipsum dolor sit amet.<span style="display: none;"> Hello I am also exist</span></p>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt!</h3>
+
+    <ul class="list">
+        <li>one</li>
+        <li>
+            Two
+        </li>
+        <li>
+            Three
+        </li>
+        <li>Three</li>
+    </ul>
+    
+    <script src="./script.js">
+
+       // const newELe=document.createElement(.list);
+
+        const repElement = documnet.querySelector("li:nth-child(3)");
+        console.log(repElement.innerHTML);
+
+
+    </script>
+</body>
+</html>

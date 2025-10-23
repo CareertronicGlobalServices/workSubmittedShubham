@@ -1,0 +1,43 @@
+.mainContainer{height: 300px;
+border: 5px solid red;
+width: 900px;
+height: 500px;
+display: flex; 
+flex-direction: column;
+/* justify-content: space-between; */
+}
+.mainContainer{background-image: url(/Media/Revised\ COader\ bg.png);
+background-size: cover;
+opacity: 0.5;
+z-index: -1;}
+
+.level1{text-align: center;
+font-size: xx-large;
+font-weight: 800;
+background-color: brown;
+color: azure;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+z-index: 1;}
+
+#pp{height: 350px;
+background-image: 2px solid red;
+opacity: 0.2;}
+
+.level2{display: flex;
+padding: 10px;
+color: aliceblue;}
+
+.level3{display: flex;
+background-color: rgb(24, 112, 116);
+height: 80px;
+justify-content: center;
+gap: 50px;
+align-items: center;}
+
+.sLinks{height: 50px;
+width: 50px;
+margin-bottom:0px ;}
+
+p::first-line{color: chartreuse;}
+h2{color: red;}
+h1{color: aqua;}

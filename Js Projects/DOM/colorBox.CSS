@@ -1,0 +1,67 @@
+
+        body {
+            background-color: lightyellow;
+            margin: 0;
+            
+        }
+        
+        h1 {
+            text-align: center;
+            color: black;
+            margin-bottom: 30px;
+            margin-top: 200px;
+        }
+        h4{text-align: center;
+            color: black;
+            }
+        
+        .main-div {
+            background-color: rgba(255, 255, 255, 0.7); 
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 15px;
+        }
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        #red {
+            background-color: red; 
+        }
+        
+        #blue {
+            background-color: rgb(68, 138, 255); 
+        }
+        
+        #green {
+            background-color: rgb(65, 158, 65); 
+        }
+        
+        #yellow {
+            background-color: yellow; 
+            color: black; 
+        }
+        
+        #purple {
+            background-color: purple; 
+        }
+        
+      

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Fun</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .top-Container{
+        position: relative;
+        height:50px;
+        width: 200px;
+        background-color: blue;
+        border: 2px solid red;
+        animation-name: top-box;
+        animation-duration:5s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction:alternate;
+    }
+    @keyframes top-box{
+        0%{
+            top: 0;
+            left:0px;
+        }
+        100%{
+            top:0;
+            left:1330px;
+        }
+    }
+
+    .bottom-Container{
+        position: relative;
+        height:50px;
+        width: 200px;
+        background-color: blue;
+        border: 2px solid red;
+        animation-name: bottom-Container;
+        animation-duration:5s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction:alternate;
+    }
+    @keyframes bottom-Container{
+        0%{
+            top: 720px;
+           left: 1330px;
+        }
+        100%{
+            top:720px;
+            left: 0px;
+        }
+    }
+
+    .circle{
+        /* display: flex;
+        justify-items: center; */
+        background-color: red;
+        width:50px;
+        height:50px;
+        border-radius: 25px;
+        position: relative;
+        border: 2px solid blue;
+        animation-name: Circle;
+        animation-duration:10s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction:alternate;
+    }
+    @keyframes Circle{
+        0%{
+            top: 20px;
+            left:1330px;
+        }
+        30%{
+            top:700px;
+            left:0;
+        }
+        60%{top: 0;
+            left:0;
+
+        }
+        100%{top:700px;
+            left:1330px;
+
+        }
+    }
+
+</style>
+<body>
+    <div class="main-Container">
+    <div class="top-Container"></div>
+    <div class="circle"></div>
+    <div class="bottom-Container"></div>    
+    </div>
+    
+</body>
+</html>

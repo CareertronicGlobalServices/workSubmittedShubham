@@ -1,0 +1,167 @@
+*{margin: 0px;
+padding: 0px;
+box-sizing: border-box;}
+
+.Container{
+    margin-top: 100px;
+    padding-left: 300px;
+padding-right: 300px;}
+
+body{ font-family: "Inter", sans-serif;
+    color: rgb(58, 58, 58); 
+
+}
+
+.Hero{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* column-gap: 50px; */
+    
+}
+
+.Hero1{
+    display: grid;
+    row-gap: 0px;
+}
+.heroH1{
+    font-size: 54px;
+    line-height: 1.8 ;
+    letter-spacing: -1;
+    
+    
+}
+.heroImg{
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+
+.button{
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 50px;
+    width: 200px;
+    background-color: green;
+    border-radius: 30px;
+    display: inline-block;
+    padding-left: 40px;
+    padding-top: 15px;
+    color: aliceblue;
+    
+}
+
+a:link{background-color: aqua;}
+a:visited{background-color: rgb(0, 255, 195);}
+a:hover{background-color: rgb(1, 142, 81);}
+a:active{background-color: brown;}
+
+.featureBoxHead{
+    margin-top: 100px;
+    font-size: 38px;
+}
+
+.featureBox{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+    column-gap: 80px;
+}
+
+.feature{
+    display: grid;
+    font-size: 18px;
+    line-height: 1.5;
+    grid-template-rows: .5fr .5fr 1fr;
+    }
+
+.icon{color: green;
+height: 35px;
+width: 35px;}
+
+.customerReview{margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #049a6d;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.customerImg{
+    height: 250px;
+    width: 300px;
+    border-radius: 15px;
+}
+.reviewContent{
+    font-size: 19px;
+    line-height: 1.5;
+    color: azure;
+    letter-spacing: 50;
+     
+}
+
+.Product{
+    background-color: aliceblue;
+    box-shadow: .5;
+}
+.productImage{
+    height: 150px;
+    width: 200px;
+    border-radius:10px ;
+}
+.productIcon{
+    height: 20px;
+    width: 20px;
+}
+
+.Button2{
+    height: 25px;
+    width: 100px;
+    background-color: green;
+    border-radius: 30px;
+}
+
+@media screen and (min-width:320px) and (max-width:480px)
+{
+.container{ width: 100%;
+background-color: cadetblue; }
+
+.heroImg{ display: none; }
+.Hero1 p{display: none;
+}
+.featureBox{display: flex;
+    flex-direction: column-reverse;
+}
+.icon{margin-top: 80px;}
+}
+
+@media screen and (min-width:481px) and (max-width:520px)
+{
+.customerReview{background-color: blueviolet;
+text-align: center;
+grid-template-rows:2fr 2fr ;
+.customerImg{height: 50px;
+    width: 50px;
+}
+}
+}
+
+/* div p{
+    color: aqua;
+} */
+
+/* h2 + p{
+    color: blueviolet;
+}
+
+ul> li{
+    font-size: 20px;
+} */
+
+h2~p{
+    font-size: xx-large;
+    color: brown;
+}
+
+.ZIndex{z-index: -1;}
+.ZInP{z-index: 2;}

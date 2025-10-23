@@ -1,0 +1,482 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ background-color: rgb(0, 0, 0);
+padding: 150px;}
+
+.hero-Container{
+    
+    display: flex;
+    gap: 100px;
+}
+
+.first-Heading{
+    font-family: Michroma, sans-serif;
+    font-size: 65px;
+    font-weight: 200;
+    color: aliceblue;
+}
+
+.Skill {
+  font-family: Michroma, sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  color: rgb(40, 233, 140);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #000;
+  width: 0;
+  /* animation: typing 4s steps(12) infinite, blinkCursor 0.7s step-end infinite, textchange 5s steps(10) infinite; */
+  animation: textchange 5s  infinite;
+}
+/* .first-Heading::after{
+    content: "Web Developer";
+    font-family: Michroma, sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  color: rgb(40, 233, 140);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #000;
+  width: 0;
+  animation: typing 10s steps(15) 1s forwards, blinkCursor 0.7s step-end infinite;
+} */
+
+.first-Heading::after {
+
+        content: "";
+
+        animation: typing 8s steps(13) infinite, blink 0.7s step-end infinite;
+
+        border-right: 2px solid #333;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+
+        display: inline-block;
+
+        width: 0ch;
+
+      }
+
+
+
+
+
+
+@keyframes typing {
+
+        0% {
+
+          content: "Web Developer";
+
+          width: 0ch;
+
+        }
+
+        10% {
+
+          content: "Web Developer";
+
+          width: 11ch;
+
+        }
+
+        45% {
+
+          content: "Web Developer";
+
+          width: 11ch;
+
+        }
+
+        50% {
+
+          content: "Web Developer";
+
+          width: 0ch;
+
+        }
+
+        51% {
+
+          content: "Coder";
+
+          width: 0ch;
+
+        }
+
+        60% {
+
+          content: "Coder";
+
+          width: 5ch;
+
+        }
+
+        85% {
+
+          content: "Coder";
+
+          width: 5ch;
+
+        }
+
+        90% {
+
+          content: "Coder";
+
+          width: 0ch;
+
+        }
+
+        91% {
+
+          content: "Web Developer";
+
+          width: 0ch;
+
+        }
+
+        100% {
+
+          content: "Web Developer";
+
+          width: 0ch;
+
+        }
+
+      }
+
+   
+
+      @keyframes blink {
+
+        0%,
+
+        50% {
+
+          border-color: #ff0000;
+
+        }
+
+        51%,
+
+        100% {
+
+          border-color: transparent;
+
+        }
+
+      }
+
+
+
+
+
+
+/* @keyframes typing {
+  0% { width: 0;
+content: "Web Developer"; }
+  10% { width: 15ch;
+content: "Web Developer";}
+
+25%{ width:15ch;
+ content: "Web Developer";}
+
+ 50%{ width:0;
+ content: "Web Developer";}
+
+ 51%{ width:0;
+ content: "Coader";}
+
+  75%{ width:15ch;
+ content: "Coader";}
+
+  100%{ width:0;
+ content: "Coader";}
+} */
+
+ 
+
+/* @keyframes textchange{
+    0%{content: "Web Developer";
+        }
+    50%{
+        content: "Coader";
+    }
+    100%{content: "designer";}
+} */
+
+
+@keyframes blinkCursor {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: black; }
+}
+
+.hero-Paragraph{
+    font-size: 20px;
+    font-weight: 400;
+    color: aliceblue;
+    margin-top: 50px;
+}
+
+.capsule{
+    height: 80px;
+    width: 500px;
+    border: 2px solid red;
+    margin-top: 50px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: left;
+    padding-left: 20px;
+    align-items: center;
+    gap: 30px;
+}
+
+.capsule-Logo{
+    height: 50px;
+    padding: 5px;
+    gap: 30px;
+}
+
+.hero-Button{
+    height: 60px;
+    width: 200px;
+    border-radius: 60px;
+    font-size: 20px;
+    background-color: rgb(40, 233, 140);
+}
+    .heroImage{
+        height: 500px;
+        border-bottom-right-radius: 200px;
+        border-top-left-radius: 200px;
+    }
+.heroImage:hover{box-shadow: 0 0 20px rgb(40, 233, 140) ;}
+
+    .about-Heading{
+        color: rgb(40, 233, 140);
+        margin-top: 50px;
+        font-size: 25px;
+    }
+
+    .about-Top{ display: flex;
+                border-bottom: 1px solid rgb(76, 76, 76);}
+
+.about-Top-Heading{ color:rgb(255, 255, 255) ;
+                    font-size: 40px;
+                    font-weight: 400;
+                    font-family: Michroma, sans-serif;}   
+
+.about-Top-Paragraph{ color: aliceblue;
+                        font-size: 20px;
+                        font-weight: 400;
+                        padding-bottom: 10px;
+}
+
+.about-Content{display: flex;
+                gap: 40px;}
+
+.about-Para{ color: aliceblue;
+            margin-top: 20px;
+            font-size: 20px;
+}
+
+.experience-Box{display: flex;
+                gap: 100px;}
+
+.education-Experience{
+    color: azure;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    justify-self: center;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: Michroma, sans-serif;
+}
+
+.experience-Image{
+    height: 700px;
+    border-radius: 15px;
+    display: block;
+   
+    z-index: 1;
+}
+
+/* .image-Overlay-Heading{
+    color: aliceblue;
+    position: absolute;
+    bottom: left 20;
+    z-index: 3;
+} */
+
+
+.experience-Image:hover{
+        background-color: aquamarine;
+       
+        box-shadow: 0 0 15px red;}
+
+                        
+.experience-Small{color: aquamarine;
+                    font-family: Michroma, sans-serif;
+                    font-size: 12px;
+                    font-weight: 500;}
+
+.experience-Heaading{color: white;
+                    font-family: Michroma, sans-serif;
+                    font-size: 20px;
+                    font-weight: 700;}
+
+.experience-Para{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 1.5px;
+}
+
+.experience-InnerBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.services-Container{
+    display: flex;
+    gap: 50px;
+    
+    margin-top: 100px;
+    
+}
+
+.services-Heading1{color: 
+rgb(40, 233, 140);
+font-size: 20px;
+font-weight: 500;}
+
+.services-Heading2{ 
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: Michroma, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.services-Para{ color: aliceblue;
+     font-size: 20px;
+    font-weight: 400;}
+
+.services-Box-Container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+
+    gap: 20px;
+}
+
+
+.service-Box{
+    border: 2px solid grey;
+   display: grid;
+   border-radius: 15px;
+   margin-bottom: 25px;
+   padding: 50px
+}
+
+.service-Box:hover{background-color: rgb(40, 233, 140);
+box-shadow: 0 0 25px red;}
+
+.service-Box-Column2{ margin-top: 80px;}
+
+.service-Icon1{
+    height: 50px;
+    color: rgb(131, 131, 255);
+}
+
+.service-Icon2{
+    height: 50px;
+    color: rgb(217, 26, 26);
+}
+
+.service-Icon3{
+    height: 50px;
+    color: yellow;
+}
+
+.service-Icon4{
+    height: 50px;
+    color: pink;
+}
+
+.service-Box-Heading{
+    font-family: Michroma, sans-serif;
+    font-size: 16px;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+.service-Box-Para{
+    color: aliceblue;
+}
+
+.software-Main-Container{
+
+    background-image: url(https://pin.it/2aPM7VWrshttps://pin.it/2aPM7VWrs);
+}
+
+.software-Heading1{
+    color: 
+rgb(40, 233, 140);
+    justify-self: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.software-Heading2{
+    color: aliceblue;
+    justify-self: center ;
+    font-family: Michroma, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.software-Content-Container{
+    background-image: url(https://pin.it/2aPM7VWrs);
+    display: flex;
+    width: auto;
+    justify-items: center;
+    margin-top: 50px;
+    
+}
+
+.software-Content{
+    border-right: 1px solid rgb(50, 50, 50);
+    margin-left: 20px;
+    justify-self: center;
+    justify-items: center;
+
+    background-image: url(https://demosites.royal-elementor-addons.com/portfolio-v2/wp-content/uploads/sites/73/2023/05/Logo-4.png);
+}
+
+.software-Logo{
+    height: 100px;
+    padding-left: 80px;
+    margin-top: 50px;
+}
+
+.software-Image-Heading{
+    color: aliceblue;
+    font-family: Michroma, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 50px;
+}
+
+.software-Image-Para{
+    color: aliceblue;
+    margin-top: 30px;
+    justify-self: center    ;
+}

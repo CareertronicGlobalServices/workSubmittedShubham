@@ -1,0 +1,76 @@
+#granny{border: 5px solid navy;}
+
+
+.container{padding-right: 30px;
+margin-top:20px ;}
+
+.contentBox{Display: flex;}
+
+#header{text-align: center;
+background-color: rgb(184, 183, 183);
+padding-top: 5px;}
+
+h1{font-size: 40px;
+color: rgb(0, 0, 77);}
+
+img{height: 400px;}
+
+.price{display: flex;}
+
+#freeShipping{ color: rgb(95, 95, 95);
+padding-left: 180px;
+font-size: 20px}
+
+#amount{font-size: 20px;
+padding-right: 20px;
+}
+
+#paragraph{font-size: 25px;}
+
+#colorBox{display: flex;}
+
+.cb1{background-color: black;
+height: 35px;
+width: 35px;
+margin: 10px;}
+
+.cb2{background-color: blue;
+height: 35px;
+width: 35px;
+margin: 10px;}
+
+.cb3{background-color: red;
+height: 35px;
+width: 35px;
+margin: 10px;}
+
+.cb4{background-color: yellow;
+height: 35px;
+width: 35px;
+margin: 10px;}
+
+.cb5{background-color: green;
+height: 35px;
+width: 35px;
+margin: 10px;}
+
+.cb6{background-color: brown;
+height: 35px;
+width: 35px;
+margin: 10px;}
+
+h3{font-size: 30px;}
+
+li{font-size: 19px;
+letter-spacing: 0.5px;
+line-height: 35px;
+list-style:square;
+}
+
+h2{text-align: center;
+background-color: rgb(0, 0, 71);
+color: aliceblue;
+font-size: 25px;
+padding-bottom: 25px;
+padding-top: 25px;
+margin-bottom: 0.2px;}

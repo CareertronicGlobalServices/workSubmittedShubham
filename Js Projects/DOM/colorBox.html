@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Boxes</title>
+    <link rel="stylesheet" href="./colorBox.CSS"/> 
+    
+</head>
+<body>
+    <h1>Theme Color Changer</h1>
+    <h4>Click on the box to see magic</h4>
+    
+    <div class="main-div">
+        <div class="container">
+            <span class="box" id="red">Box 1</span>
+            <span class="box" id="blue">Box 2</span>
+            <span class="box" id="green">Box 3</span>
+            <span class="box" id="yellow">Box 4</span>
+            <span class="box" id="purple">Box 5</span>
+        </div>
+    </div>
+
+    <script>
+
+        const boxes= document.querySelectorAll(".box");
+        console.log(boxes); //help us to check if the element is selected properly or not
+        const body = document.querySelector("body"); // for targeting the entire body 
+        console.log(body); 
+
+        //----------for single box-----------
+
+        //boxes.addEventListener("click", function (s) { // this adds a click event listener to the element stored in boxes. When we click on element code inside function will run.s is the event object (we can name it anything like superman), and it contains information about the click event
+           //console.log(s);
+          // console.log(s.target);// tells us which child element was actually clicked and returned full line of code
+          // console.log(s.target.id); // tells us which child element was actually clicked and returned its id name
+          // body.style.background= s.target.id; //It sets the background to whatever value is in the clicked id.
+        //})
+
+        //----------for all boxes------
+        boxes.forEach(function(box){
+            console.log(box);
+            box.addEventListener("click", function(s){
+                if(s.target.id ==="red"){
+                    body.style.background= s.target.id; }
+                else if(s.target.id ==="blue"){
+                    body.style.background= s.target.id; }
+                else if(s.target.id ==="green"){
+                    body.style.background= s.target.id; }
+                else if(s.target.id ==="yellow"){
+                    body.style.background= s.target.id; }
+                else if(s.target.id ==="purple"){
+                    body.style.background= s.target.id; }   
+            })
+        })
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,290 @@
+*{margin: 0px;
+padding: 0px;
+box-sizing: border-box;}
+
+body {
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Inter', sans-serif;
+    
+    }
+
+
+
+
+.heroSectionContent{
+     position: relative;
+      height: 600px;
+      /* background: url("https://cdn.pixabay.com/photo/2020/11/04/17/11/architecture-5713016_1280.jpg") no-repeat center center/cover;  */
+      background: url(/Construction\ Hero\ Img\ \(1\).png) no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; 
+      color: white;
+      text-align: center;
+      border-bottom: 20px;
+      border-bottom-left-radius: 30% 100px;
+      border-bottom-right-radius: 30% 100px;
+    
+
+}
+
+/* .overlay{ 
+    position: absolute;
+    background-color: rgba(2, 40, 22, 0.671) ; 
+    z-index: 1;
+    height: 600px;
+    width: 100%;} */
+
+    .heroPara1{
+        font-size: 14px;
+        font-weight: bold;
+        background-color: rgba(215, 215, 215, 0.493);
+        padding: 8px 16px;
+        border-radius: 20px;
+        color: aliceblue;
+        z-index: 2;
+        text-transform: uppercase;
+        font-family: 'Inter', sans-serif;
+    }
+
+.heroHeading{
+    font-size: 80px;
+    color: aliceblue;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+.heroPara2{
+    font-size: 16px;
+    font-weight: 400;
+    color: aliceblue;
+    z-index: 2;
+    font-family: 'Roboto', sans-serif;
+}
+
+.secondDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border: 1px solid rgba(128, 128, 128, 0.351);
+    border-radius: 15px;
+}
+
+.flexImage1{border-radius: 28px 200px 0px 28px; }
+
+.gridSection{ margin-top: 50px;}
+
+.gridHeading{
+    font-family: 'Inter', sans-serif ;
+    font-size: 32px;
+    font-weight:700 ;
+    color:rgb(6, 50, 49);
+}
+
+.gridParagraph{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color:rgb(6, 50, 49);
+    line-height: 26px;
+}
+
+.gridHeading4{
+    margin-top: 25px;
+    font-family: 'Inter', sans-serif ;
+    font-size: 20px;
+    font-weight:700 ;
+    color:rgb(6, 50, 49);
+}
+
+.list{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight:400;
+    color: rgb(73, 91, 85);
+    line-height: 40px;
+    margin-bottom: 25px;
+    list-style: none;
+
+}
+
+.list li::before{
+    content: "✅";
+}
+
+.linkButton{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(6, 50, 49);
+    letter-spacing: 3px;
+    background-color: #B4F625;
+    padding: 20px;
+    border-radius: 30px;
+    font-style: normal;
+    text-decoration: none;
+    }
+a:link{
+    color:rgb(6, 50, 49);
+}
+a:visited{
+    color:rgb(6, 50, 49)d;
+}
+a:hover{
+    background-color: #8ac901;
+}
+
+
+.ThirdDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 45px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border: 1px solid rgba(128, 128, 128, 0.351);
+    border-radius: 15px;
+}
+
+.sixthSection{
+    display: grid;
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 80px;
+    background-color: #F6F7F7;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 80px;
+}
+
+.small{
+    font-weight: bolder;
+}
+
+.sixthHeading{
+    font-size: 54px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif ;
+    color: rgb(6, 50, 49);
+}
+
+.sixthParagraph{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(73, 91, 85);
+    font-family: 'Roboto', sans-serif;
+    line-height: 26px;
+}
+
+.flexBoxContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #F6F7F7;
+    justify-items: center;
+}
+
+.flexIcon{
+    height: 60px;
+    width: 60px;
+    color: #CBFF54;
+    background-color:rgb(29, 54, 46);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.flexbox{ 
+    align-items: center;
+    background-color: #F6F7F7;
+    padding: 20px;
+    
+
+}
+.flexBackground{
+    background-color: white;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 420px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.flexBoxHeading{
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(6, 50, 49);
+    font-family: 'Inter', sans-serif ;
+}
+
+.flexBoxPara{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(73, 91, 85);
+    font-family: 'Roboto', sans-serif ;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    font-display: wrap;
+}
+
+.flexButton{
+    background-color: #B4F625;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.lastSection{
+    margin: 80px;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: #B4F625;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 120px;
+}
+
+.lastSectionSmall{
+    font: 500;
+    font-size: 14px;
+    color: rgb(6, 50, 49);
+    font-family: 'Roboto', sans-serif ;
+    text-transform: uppercase;
+}
+
+.lastHeading{
+    font-weight: 700;
+    font-size: 48px;
+    color: rgb(6, 50, 49);
+    font-family: 'Inter', sans-serif ;
+}
+
+.lastparagraph{
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(6, 50, 49);
+    font-family: 'Roboto', sans-serif ;
+    line-height: 50px;
+}
+
+.lastButton{
+    background-color:rgb(6, 50, 49) ;
+    color: #B4F625;
+    padding: 10px 35px;
+    border-radius: 25px;
+    font-size: large;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+.lastSectionBackground{
+    background-color: rgb(6, 50, 49);
+    padding: 80px;
+}

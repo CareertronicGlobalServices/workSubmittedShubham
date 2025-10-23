@@ -1,0 +1,46 @@
+body{display: flex;
+margin: 0px;
+padding: 0px;}
+
+.parent{
+    display: flex;
+    background-color: antiquewhite;
+    width: 1100px;
+    height: 200px;
+}
+p{font-size:40px;}
+
+.HTML{
+    background-color: pink;
+    padding-right: 136px;
+    margin-bottom: 90px;}
+    
+.and{
+    background-color: red;
+    padding-right: 68px;
+    padding-left: 68px;
+    padding-bottom: 10px;
+    margin-top: 70px; 
+    margin-bottom: 40px;
+    text-align: center;
+}
+.CSS{padding-right: 136px;
+    padding-left: 0px;
+    
+}
+.are{
+    background-color: red;
+    padding-right: 68px;
+    padding-left: 68px;
+    margin-top: 70px; 
+    margin-bottom: 40px;
+    text-align: center;
+    
+}
+.Amazing{
+    background-color: cadetblue;
+    padding-right: 68px;
+    padding-left: 68px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 100px;
+}

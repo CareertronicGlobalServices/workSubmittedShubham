@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        #top-header{
+            height: 100px;
+            background-color: antiquewhite;
+            text-align: center;
+            font-size: xx-large;
+        }
+        #side-menu{
+            min-height: 700px;
+            width: 200px;
+            background-color: antiquewhite;
+            font-size:x-large;
+        }
+        .button{
+            width: 100px;
+            height: 50px;
+            border-radius: 8px;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        #red{background-color: red;}
+        #blue{background-color: blue;}
+        #green{background-color: green;}
+        #yellow{background-color: yellow;}
+        #purple{background-color: purple;}
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="menu" id="top-header">Site Header</div>
+        <div class="menu" id="side-menu">Side Menu</div>
+    </div>
+
+    <span class="text">Change your site theme </span>
+
+    <div class="container">
+    <span class="button" id="red">. </span>
+    <span class="button" id="blue">. </span>
+    <span class="button" id="green"> </span>
+    <span class="button" id="yellow"> </span>
+    <span class="button" id="purple"> </span>
+    </div>
+    
+    <script>
+        const buttons = document.querySelectorAll(".button");
+        console.log(buttons);
+        const mnu= document.querySelectorAll(".menu")
+
+         //button.addEventListener("click", function(b){
+           // mnu.style.background= b.target.id;}
+
+        buttons.forEach(function(button){
+            //console.log(button);
+        button.addEventListener("click", function(b){
+            console.log(b);
+            console.log(b.target.id);
+
+            mnu.forEach(function(menu){
+            if(b.target.id==="red"){
+            menu.style.background= b.target.id; }
+            else if(b.target.id==="blue"){
+            menu.style.background= b.target.id; }
+            else if(b.target.id==="green"){
+            menu.style.background= b.target.id; }
+            else if(b.target.id==="yellow"){
+            menu.style.background= b.target.id; }
+            else if(b.target.id==="purple"){
+            menu.style.background= b.target.id; }
+            })
+        })
+        })
+
+    </script>
+</body>
+</html>

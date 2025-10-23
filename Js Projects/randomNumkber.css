@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+    color: aliceblue;
+    justify-items: center;
+    align-items: center;
+}
+
+.main-Container{
+    background-color: grey;
+    max-width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.main-Heading{
+    background-color: black; 
+    padding: 20px;   
+    font-size: 40px;
+}
+
+.paragraph{
+    font-size: 20px;
+
+}
+
+.second-Heading{
+    font-size: 35px;
+}
+
+#num-input{
+    padding: 12px;
+    width: 80%;
+    margin-bottom: 10px;
+    border: 2px solid #ff7676;
+    border-radius: 10px;
+}
+
+#submit-Button{
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-left: 15px;
+    
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./nameAnalyzer.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="greeting-container">
+            <h1>Student Name Analyzer</h1>
+            <p>Add, search, edit, delete, and analyze student names</p>
+        </div>
+
+        <div class="input-div">
+
+            <div class="name-div">
+            <input id="input-name" type="text" placeholder="Enter your name"/>
+            <button class="main-button" id="name-button">Add Student</button>
+            </div>
+
+            <div class="search-div">
+            <input id="input-search" type="text" placeholder="Enter name for search"/>
+            <button class="main-button" id="search-button">Search</button>
+            </div>
+        </div>
+
+        <div class="button-div">
+            <button class="secondary-button" id="Alphabetically-button">Sort Alphabetically</button>
+            <button class="secondary-button"  id="reverse-button">Reverse Order</button>
+            <button class="secondary-button"  id="removeDuplicatesBtn">Remove Duplicates</button>
+            <button class="secondary-button" id="clear-button">Clear All</button>
+        </div>
+
+          <div class="count-display" id="countDisplay">Total Students: 0</div>
+
+        
+
+        <div class="analysis">
+            <div class="analysis-report">
+                <h3>Longest Name:-</h3>
+                <p id="longest-name"></p>
+            </div>
+
+            <div class="analysis-report">
+                <h3>Shortest Name:-</h3>
+                <p id="shortest-name"></p>
+            </div>
+
+            <div class="filter">
+                <input id="filter-input" type="text" placeholder="Entrer starting letter of the name you want to filter"/>
+                <button class="secondary-button" id="count-btn">Count name</button>
+            </div>
+        </div>
+
+        <div class="student-list" id="studentList"></div>
+
+
+    </div>
+    <script src="./nameAnalyzer.js"></script>
+</body>
+</html>
