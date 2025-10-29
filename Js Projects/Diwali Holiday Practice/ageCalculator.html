@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <style>
+        body{
+            justify-items: center;
+            margin: 0px;
+            padding: 0px;
+        }
+        .main-container{
+            background-color: #00246B;
+            color: #CBDDFC;
+            width: 800px;
+            height: 340px;
+            justify-items: center;
+            border-radius: 20px;
+            border: 3px solid red;
+        }
+        .today-date-container{
+            display: flex;
+            flex-direction: row;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .date-Input{
+            background-color: aquamarine;
+            font-size: x-large;
+            font-weight: 900;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .result{
+            font-size: x-large;
+            margin-top: 10px;
+            background-color: brown;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="main-container">
+    <h1 class="main-heading">Age Calculator</h1> 
+    <div class="today-date-container">
+         <p class="Date">Today's Date:</p>
+        <div class="todayDate"></div>
+    </div>
+   <div class="dob">
+    <h3> Enter Date of Birth:    </h3>
+    <input type="date" class="date-Input">   
+   </div>
+    
+    <div class="result"></div>
+    </div>
+    <script>
+        const todayDate = document.querySelector('.todayDate');
+        const dateInput = document.querySelector('.date-Input');
+        const result= document.querySelector('.result');
+
+     const today= new Date();
+     todayDate.innerHTML = today.toDateString();
+
+    function calculateAge(dob){
+        const birthDate = new Date(dob);
+        let age = today.getFullYear() - birthDate.getFullYear() //|| today.getMonth() -birthDate.getMonth()
+        return age;
+}
+    dateInput.addEventListener('change',() =>{
+        const dob = dateInput.value
+        if(dob){
+           const age = calculateAge(dob);
+            result.innerHTML = `You are ${age} years old`;
+        }
+    })
+
+    </script>
+</body>
+</html>

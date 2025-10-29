@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <style>
+        body{
+            justify-items: center;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main-Container{
+            background-color: black;
+            color: rgb(255, 0, 0);
+            width: 1600px;
+            justify-items: center;  
+            display: flex;
+            flex-direction: column;  
+            padding-bottom: 50px;  
+            border-radius: 60px; 
+            border: 10px solid red;
+            box-shadow: 5px 5px 8px orange, 12px 12px 8px white, 15px 15px 8px green;
+        }
+        .main-header{
+            font-size:50px ;
+            background-color: aliceblue;
+            border-radius: 15px;
+            padding: 10px;
+            align-self: center;
+            max-width: 850px;
+            
+        }
+        .dice-Image{
+            width: 200px;
+            height: 200px;
+            align-self: center;
+        }
+        .dice-Button{
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: not-allowed;
+            border: none;
+            background-color: #0078D7;
+            color: white;
+            border-radius: 5px;
+            max-width: 150px;
+            align-self: center;
+        }
+        button:hover {
+             background-color: #00a329;
+              box-shadow: 5px 5px 8px orange, 12px 12px 8px white, 15px 15px 8px green;
+}
+
+    </style>
+</head>
+<body>
+    <div class="main-Container">
+        <h1 class="main-header">🎲  शकुनि मामा के पासे </h1>
+        <img class="dice-Image" src="./1.svg"><br>
+        <button class="dice-Button"> Roll the Dice</button>
+        <audio class="dice-audio" src="./ssvidnet-mere-bacche-mane-tumse-kha-tha-sakuni_tP3FpGSi [vocals].mp3" preload="none"></audio>
+    </div>
+    <script>
+        const dice = document.querySelector('.dice-Image');
+        const rollBtn = document.querySelector('.dice-Button');
+        const diceAudio = document.querySelector('.dice-audio');
+
+        rollBtn.addEventListener('click', function(){
+            dice.src= '6cfcd360883d741973b6caaf7afe4f9e.jpg'
+            //dice.src='Untitled design.gif'
+            diceAudio.play();
+
+        setTimeout(()=>{
+            const roll = Math.floor(Math.random() * 6) + 1;
+            dice.src =`${roll}.svg`;
+        },2000)
+        })
+    </script>
+</body>
+</html>

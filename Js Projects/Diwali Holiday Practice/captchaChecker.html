@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPTCHA Checker</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            justify-items: center;
+        }
+
+        .main-container{
+            justify-items: center;
+            margin-top: 100px;
+        
+        }
+
+        .main-Heading{
+            color: red;
+            font-size: 40px;
+        }
+        .captcha{
+            font-size: xx-large;
+            font-weight: 800;
+            font-style: oblique;
+        }
+        .captcha-input{
+            height: 20px;
+            width: 250px;
+            font-size: x-large;
+            padding: 8px;
+            border: 2px solid red;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .check-button{
+            padding: 8px;
+            border-radius: 15px;
+            border: 4px solid rgb(142, 255, 194);
+            background-color: brown;
+            color: white;
+            font-size: large;
+        }
+        .refresh-Button{
+            padding: 8px;
+            border-radius: 15px;
+            border: 4px solid rgb(142, 255, 194);
+            background-color: brown;
+            color: white;
+            font-size: large;
+        }
+        .reset-Input{
+            padding: 8px;
+            border-radius: 15px;
+            border: 4px solid rgb(142, 255, 194);
+            background-color: brown;
+            color: white;
+            font-size: large;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="main-Heading">Captcha Checker</h1>
+        <h3 class="captcha"></h3>
+        <input type="text" class="captcha-input"></br>
+        <button class="check-button">Check</button>
+        <button class="refresh-Button">Refresh Captcha</button>
+        <button class="reset-Input">Reset</button>
+    </div>
+    <script>
+        const captcha = document.querySelector('.captcha');
+        const captchaInput = document.querySelector('.captcha-input');
+        const checkButton = document.querySelector('.check-button');
+        const refresh= document.querySelector('.refresh-Button');
+        const reset = document.querySelector('.reset-Input');
+
+        //let newCaptcha= null;
+
+        const randomCaptcha = function(){
+        const val = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+        let newCaptcha= '';
+        for(let i = 0; i < 6; i++){
+            newCaptcha += val[Math.floor(Math.random() * val.length)];
+        }
+        return newCaptcha ;
+       
+    };
+
+    captcha.innerHTML = randomCaptcha();
+
+    
+    checkButton.addEventListener('click', function(){
+            if(captchaInput.value === captcha.innerHTML){
+                alert('🎉 Congrulations captcha matched')
+            }
+            else{
+                alert('❌ Oops captcha not matched! Try again.')
+            }
+    })
+
+    refresh.addEventListener('click', function(){
+        captcha.innerHTML = randomCaptcha();
+        //captchaInput.value = '';
+    });
+
+    reset.addEventListener('click', function(){
+        captcha.innerHTML = randomCaptcha();
+        captchaInput.value = '';
+    })
+        
+    </script>
+</body>
+</html>
