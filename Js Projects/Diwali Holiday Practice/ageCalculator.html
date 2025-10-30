@@ -22,6 +22,14 @@
         .today-date-container{
             display: flex;
             flex-direction: row;
+            gap: 10px;
+        }
+
+        .Date{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .todayDate{
             font-size: 20px;
             font-weight: 600;
         }
@@ -67,14 +75,24 @@
 
     function calculateAge(dob){
         const birthDate = new Date(dob);
-        let age = today.getFullYear() - birthDate.getFullYear() //|| today.getMonth() -birthDate.getMonth()
-        return age;
+        let ageYear = today.getFullYear() - birthDate.getFullYear() 
+        //let ageMonth = today.getMonth() -birthDate.getMonth()
+        //console.log( ageYear, ageMonth);
+        return ageYear;
+}
+    function calculateAge2(dob){
+        const birthDate = new Date(dob);
+        //let ageYear = today.getFullYear() - birthDate.getFullYear() 
+        let ageMonth = today.getMonth() -birthDate.getMonth()
+        //console.log( ageYear, ageMonth);
+        return ageMonth;
 }
     dateInput.addEventListener('change',() =>{
         const dob = dateInput.value
         if(dob){
-           const age = calculateAge(dob);
-            result.innerHTML = `You are ${age} years old`;
+            const ageYear = calculateAge(dob);
+            const ageMonth = calculateAge2(dob);
+            result.innerHTML = `You are ${ageYear} years ${ageMonth} month old.`;
         }
     })
 
